@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(340px, 1fr));
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
-</head>
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    text-align: center;
+}
+h1,h4{
+    text-align: center;
+}
 
-<body>
-    <h1>OpenWeatherMap.org API Test</h1>
-    <main>
-        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-        <figure>
-            <img id="weather-icon" src="" alt="">
-            <figcaption></figcaption>
-        </figure>
-    </main>
-    <footer>
-        Samuel Turay | OpenWeatherMap.org | CC BY-SA 4.0
-    </footer>
-    <script src="scripts/weather.js"></script>
-</body>
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
 
-</html>
+header{
+    background-color: antiquewhite;
+}
+main{
+    background-color:beige;
+}
+footer{
+    text-align: center;
+}
