@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let visitCount = localStorage.getItem('visitCount');
-    if (!visitCount) {
-        visitCount = 0;
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.visitcount) {
+            localStorage.visitcount = Number(localStorage.visitcount) + 1;
+        } else {
+            localStorage.visitcount = 1;
+        }
+        document.getElementById("visitCounter").innerHTML = "Visit Count: " + localStorage.visitcount;
+    } else {
+        document.getElementById("visitCounter").innerHTML = "Sorry, your browser does not support web storage...";
     }
-    visitCount++;
-    localStorage.setItem('visitCount', visitCount);
-
-    const visitCounterDiv = document.getElementById('visitCounter');
-    visitCounterDiv.textContent = `Page Visits: ${visitCount}`;
 });
