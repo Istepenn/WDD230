@@ -45,6 +45,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
+    position: relative;
 }
 
 .card {
@@ -63,7 +64,7 @@ footer {
 .hero-image {
     width: 100%;
     height: auto;
-    position: relative;
+    display: block;
 }
 
 .overlay-text {
