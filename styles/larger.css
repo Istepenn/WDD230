@@ -1,19 +1,16 @@
 @media (min-width: 768px) {
-  nav ul {
-      display: flex;
-      justify-content: space-around;
-  }
+    nav ul li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
 
-  .card {
-      display: inline-block;
-      vertical-align: top;
-  }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
 
-  .card:nth-of-type(1) {
-      width: 66%;
-  }
-
-  .card:nth-of-type(2) {
-      width: 33%;
-  }
+    .card:nth-child(1) {
+        grid-column: span 2;
+    }
 }
