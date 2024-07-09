@@ -16,6 +16,12 @@ header img {
     margin-right: 1rem;
 }
 
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -52,4 +58,20 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #f8f8f8;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    white-space: nowrap;
 }
