@@ -1,137 +1,176 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lynnwood Chamber of Commerce Discover</title>
-    <meta name="description"
-        content="The Lynnwood Community Discover page opens you to the beautiful community of Lynnwood. It highlights all the landmarks, recreational parks, etc.">
-    <meta name="author" content="Samuel Turay">
-    <meta property="og:title" content="Lynnwood Business Chamber">
+    <meta property="og:title" content="Monterrey Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://istepenn.github.io/wdd230/chamber/discover.html">
     <meta property="og:image"
-        content="https://raw.githubusercontent.com/Koigor97/wdd230/main/chamber/images/hero.WEBP">
-    <meta property="og:site_name" content="Lynnwood Business Chamber">
-    <meta property="og:description"
-        content="Join the Lynnwood Community Chamber of Commerce. Joining the Lynnwood Chamber of Commerce opens you to a world of possibilities, from Business ventures, Investments, Innovations, etc.">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&family=Poppins&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
+        content="https://github.com/alansanchezzamora/wdd230/blob/70942a5a163c936b0c7b5acb3cefa987e855c5af/chamber2/images/og-mty.jpg">
+    <meta property="og:url" content="https://alansanchezzamora.github.io/wdd230/chamber/index.html">
+    <meta name="author" content="Alan Sanchez Zamora">
+    <meta name="description" content="Monterrey Nuevo Leon Chamber of Commerce, join us!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Monterrey Chamber of Commerce Site</title>
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/extra-large.css">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 
-<body class="thankyou-page-body">
+
+<body>
     <header>
-        <button class="menu-btn" aria-label="Toggle menu button">
-            <svg>
-                <use xlink:href="images/sprite.svg#icon-icon-menu"></use>
-            </svg>
-        </button>
-
-        <div class="logo-box">
-            <a href="index.html"><img src="images/chamber-logo.png" alt="Lynnwood Business Chamber logo" class="logo"
-                    width="323" height="130">
-            </a>
+        <div id="logo">
+            <img id="img-header" src="images/logo-nl1.webp" alt="Monterrey Logo">
         </div>
-
-        <nav class="header-nav">
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-links"><svg>
-                            <use xlink:href="images/sprite.svg#icon-home"></use>
-                        </svg> HOME</a></li>
-                <li><a href="discover.html" class="nav-links"><svg>
-                            <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
-                        </svg> DISCOVER</a></li>
-                <li><a href="directory.html" class="nav-links"><svg>
-                            <use xlink:href="images/sprite.svg#icon-folder"></use>
-                        </svg> DIRECTORY</a></li>
-                <li><a href="join.html" class="nav-links"><svg>
-                            <use xlink:href="images/sprite.svg#icon-add-user"></use>
-                        </svg> JOIN</a></li>
-            </ul>
-
-            <div aria-label="Light and dark mode toggle switch" role="switch" aria-checked="false" tabindex="0">
-                <span class="switch">
-                    <span></span>
-                </span>
-                <span class="off" aria-hidden="true">
-                    <svg>
-                        <use xlink:href="images/sprite.svg#icon-sun"></use>
-                    </svg>
-                </span>
-
-                <span class="on" aria-hidden="true">
-                    <svg>
-                        <use xlink:href="images/sprite.svg#icon-moon"></use>
-                    </svg>
-                </span>
-            </div>
-        </nav>
+        <h4 id="currentDate"></h4>
+        <div id="mode">
+            <em> Dark Mode</em>🌝
+        </div>
     </header>
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="#" title="Discover" class="active">Discover</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li><a href="join.html" titl e="Join">Join</a></li>
+        </ul>
+    </nav>
+    <main id="main-discover">
+        <aside>
+            <div class="aside">
+                <h2>Overview </h2>
+                <ul>
+                    <li>Capital and largest city of the northeastern state of Nuevo León, Mexico</li>
+                    <li>Located at the foothills of the Sierra Madre
+                        Oriental</li>
+                    <li>2nd largest Metropolitan area in Mexico with
+                        an estimated population of 5,341,171</li>
+                    <li>2nd most productive metropolitan
+                        area in Mexico with a GDP (PPP) of US$140 billion in 2015.</li>
+                </ul>
+            </div>
+            <div class="aside">
+                <h2>Life</h2>
+                <p>Monterrey is one of the most livable cities in Mexico, and a 2018 study found that suburb San Pedro
+                    Garza García is the city with the best quality of life in Mexico</p>
+            </div>
+            <div class="aside">
+                <h2>Economy</h2>
+                <p>Monterrey is a major industrial center in northern Mexico, with a GDP (PPP) of US$140 billion and a
+                    GDP (PPP) per capita of US$31,900 in 2015.[8] The city was rated by Fortune magazine in 1999 as the
+                    best city in Latin America for business and is currently ranked third best by the América Economía
+                    magazine.
 
-    <main>
-        <section>
-            <h1>Discover Laguna Community</h1>
-            <p>Congratulations! You're now an official member of the Laguna Chamber of Commerce. 🎉</p>
-            <p>You've taken a significant step toward unlocking new opportunities, networking with industry leaders, and growing your business. We're thrilled to have you on board! Thank you for choosing us as your partner in success.</p>
-        </section>
+                    The city has prominent positions in sectors such as steel, cement, glass, auto parts, and brewing.
+                    The city's economic wealth has been attributed in part to its proximity to the United States-Mexico
+                    border and economic links to the United States.
+
+                </p>
+            </div>
+            <table id="statistics-table">
+                <thead>
+                    <tr>
+                        <th>Monterrey Statistics</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Population</td>
+                        <td>1,142,994</td>
+                    </tr>
+                    <tr>
+                        <td>International Sales</td>
+                        <td>US$5.25B</td>
+                    </tr>
+                    <tr>
+                        <td>International Purchases</td>
+                        <td>US$10.1B</td>
+                    </tr>
+                    <tr>
+                        <td>FDI</td>
+                        <td>US$2.79B</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </aside>
+        <gallery class="gallery">
+            <div id="gallery-header">
+                <span>
+                    <p id="message"></p>
+                </span>
+                <h2><span class="label">Number of Visits: </span><span class="visits"></span></h2>
+                <h1>Monterrey Gallery</h1>
+                </div>
+            <div>
+                <img class="discover-img" src="images/MTY4.webp" loading="lazy" alt="View from El Cerro de la Silla">
+                <figcaption id="fig11">View from El Cerro de la Silla</figcaption>
+            </div>
+            <div>
+                <img class="discover-img" src="images/Panorama_ITESM.webp" loading="lazy"
+                    alt="Tecnológico de Monterrey University">
+                <figcaption id="fig12">Tecnológico de Monterrey University</figcaption>
+            </div>
+            <div>
+                <img class="discover-img" src="images/Skymty.webp" loading="lazy"
+                    alt="SkyView from El Cerro de la Silla">
+                <figcaption id="fig13">SkyView from El Cerro de la Silla</figcaption>
+            </div>
+            <div>
+                <img class="discover-img" src="images/og-mty.webp" loading="lazy" alt="San Agustin Zone">
+                <figcaption id="fig14">San Agustin Zone</figcaption>
+            </div>
+            <div>
+                <img class="discover-img" src="images/huasteca.webp" loading="lazy" alt="Huasteca National Park">
+                <figcaption id="fig15">Huasteca National Park</figcaption>
+            </div>
+            <div>
+                <img class="discover-img" src="images/monterrey.webp" loading="lazy" alt="BBVA Stadium">
+                <figcaption id="fig16">BBVA Stadium</figcaption>
+            </div>
+            <div>
+                <img class="discover-img" src="images/image.webp" loading="lazy" alt="Monterrey Picture at night">
+                <figcaption id="fig17">Gonzalitos Zone at night</figcaption>
+            </div>
+            <div>
+                <img class="discover-img" src="images/discover-2.webp" loading="lazy" alt="Obispado Tower">
+                <figcaption id="fig18">Obispado Tower</figcaption>
+            </div>
+        </gallery>
     </main>
-
     <footer>
-        <div class="contact-box">
-            <p class="footer-captions">Contact Us</p>
-            <address>
-                <a href="suitonkyle@gmail.com">📧 :LBHouse</a>
-                <a href="09518901891">📞 095189018919</a>
-                <p>📍 Los Banos</p>
-                <p>Laguna</p>
-                <p>Philippines</p>
-            </address>
+        <div id="contact-info">
+            <img id="footer-img" src="images/logo-nl.webp" loading="lazy" alt="Monterrey Logo">
+            <h2>Monterrey Chamber of Commerce</h2>
+            <h4>Calle 1 #123 Col Zona Centro Monterrey NL</h4>
+            <h4>contact@mtychamber.com</h4>
+            <h4>+(81)10042234</h4>
+
         </div>
-        <div class="quick-link-box">
-            <p class="footer-captions">Quick Links</p>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join Us</a></li>
-            </ul>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230187.00306399795!2d-100.4679068735161!3d25.649011979312956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1695943508451!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="footer-socials">
-            <p class="footer-captions">Stay Connected</p>
-            <ul>
-                <li><a href="https://www.facebook.com/istepenn" target="_blank" class="footer-social-links"
-                        aria-label="Go to Istepenn's Facebook page">
-                        <svg>
-                            <use xlink:href="images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a></li>
-                <li><a href="https://www.instagram.com/istepen_grimwulf/?ref=badge" target="_blank"
-                        class="footer-social-links" aria-label="Go to Istepen Grimwulf's Instagram page">
-                        <svg>
-                            <use xlink:href="images/sprite.svg#icon-instagram-with-circle"></use>
-                        </svg>
-                    </a></li>
-            </ul>
-        </div>
-        <div class="copyright-box">
-            <p>&copy; <span id="year"></span> .:|:. Stephen Kyle Suiton - WDD230 .:|:. Laguna, Philippines</p>
-            <p>Last modified: <span class="last-modify"></span></p>
-            <p id="analytics"></p>
+        <div id="dev-info">
+            <hr>
+            <p>&copy 2023 Monterrey Chamber</p>
+            <p>Alan Jared Sánchez Zamora</p>
+            <p>WDD230 Project</p>
+            <div id="lastModified"></div>
         </div>
     </footer>
-
-    <script src="scripts/index.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 
 </html>
