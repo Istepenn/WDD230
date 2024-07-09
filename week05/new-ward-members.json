@@ -1,0 +1,28 @@
+{
+    "familyName" : "Sanchez Family",
+    "movedDate" : 2021,
+    "familyMembers" : 4,
+    "bishopricVisit" : true,
+    "members" : [
+        {
+            "name" : "Alan",
+            "gender" : "male",
+            "bithdate" : "08/11"
+        },
+        {
+            "name" : "Karina",
+            "gender" : "female",
+            "birthdate" : "05/27"
+        },
+        {
+            "name" : "Aaron",
+            "gener" : "male",
+            "birthdate" : "12/27"
+        },
+        {
+            "name" : "Eva",
+            "gender" : "female",
+            "birthdate" : "11/16"
+        }
+    ]
+}

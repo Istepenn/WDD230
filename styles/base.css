@@ -1,0 +1,47 @@
+body {
+    font-family: 'Your chosen font', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header img {
+    width: 150px; /* Set to desired size */
+    height: 150px; /* Ensure the height matches the width */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-radius: 50%; /* Optional: to make the image a circle */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+.card {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
