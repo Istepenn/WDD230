@@ -2,48 +2,64 @@ const url1 = "data/members.json";
 const cards = document.querySelector("#cards");
 
 async function getBusinessesData() {
-  const response = await fetch(url1);
-  const data = await response.json();
-  displayBusinesses(data.businesses);
+  try {
+    const response = await fetch(url1);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    displayBusinesses(data.businesses);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    cards.textContent = 'Failed to load data. Please try again later.';
+  }
 }
 
 const displayBusinesses = (businesses) => {
+  cards.innerHTML = ''; // Clear previous content before displaying new data
   businesses.forEach((business) => {
     let card = document.createElement("section");
-    let bName = document.createElement("h2");
+    card.classList.add("business-card");
+
     let logo = document.createElement("img");
-    let memberSince = document.createElement("p");
+    logo.src = business.logo;
+    logo.alt = `Logo of ${business.name}`;
+    logo.loading = "lazy";
+    logo.width = "100";
+    logo.height = "100";
+
+    let bName = document.createElement("h2");
+    bName.textContent = business.name;
+
     let bDescription = document.createElement("p");
+    bDescription.textContent = business.description;
+
     let address = document.createElement("p");
-    let website = document.createElement("a");
+    address.textContent = business.address;
+
     let membership = document.createElement("h4");
-
-    logo.setAttribute("src", business.logo);
-    logo.setAttribute("alt", `Logo of ${business.name}`);
-    logo.setAttribute("loading", "lazy");
-    logo.setAttribute("width", "auto");
-    logo.setAttribute("height", "auto");
-
-    bName.textContent = `${business.name}`;
-    bDescription.textContent = `${business.description}`;
-    address.textContent = `${business.address}`;
     membership.textContent = `${business.membership} Membership`;
+
+    let memberSince = document.createElement("p");
     memberSince.textContent = `Member Since: ${business.since}`;
-    website.setAttribute("href", `${business.url}`);
+
+    let website = document.createElement("a");
+    website.href = business.url;
     website.textContent = business.url;
-    website.setAttribute("target", "_blank");
+    website.target = "_blank";
 
     card.appendChild(logo);
     card.appendChild(bName);
     card.appendChild(bDescription);
     card.appendChild(address);
-    card.appendChild(memberSince);
     card.appendChild(membership);
+    card.appendChild(memberSince);
     card.appendChild(website);
 
     cards.appendChild(card);
   });
 };
+
 getBusinessesData();
 
 const gridbutton = document.querySelector("#grid");
@@ -55,9 +71,7 @@ gridbutton.addEventListener("click", () => {
   display.classList.remove("list-directory");
 });
 
-listbutton.addEventListener("click", showList);
-
-function showList() {
+listbutton.addEventListener("click", () => {
   display.classList.add("list-directory");
   display.classList.remove("grid-directory");
-}
+});
