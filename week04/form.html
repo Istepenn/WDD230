@@ -1,21 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="John Doe">
     <meta name="description" content="Fill Me In">
 
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <title>Course Proposal Application</title>
 </head>
 
 <body>
     <header>
         <div id="formmessage"></div>
     </header>
+
     <nav class="clearfix">
         <ul>
             <li><a href="#">About</a></li>
@@ -24,19 +27,25 @@
 
     <main>
         <h1>Course Proposal Application</h1>
+
         <form method="get" action="record.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label class="top"> User Name*<input type="text" name="id" required></label>
+
+                <label class="top">User Name*<input type="text" name="id" required></label>
+
                 <label class="top" for="keyphrase">Password*</label>
-                <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{8,}"
-                    placeholder="At least 8 characters long. No numbers.">
+                <input type="password" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{8,}"
+                    placeholder="At least 8 characters long. No numbers." required>
+
                 <label class="top" for="keyphrase2">Re-enter Your Key Password</label>
-                <input type="text" id="keyphrase2" name="keyphrase2">
-                
-                <label class="top"> Email*<input type="email" name="email" placeholder="someone@gmail.com"
+                <input type="password" id="keyphrase2" name="keyphrase2" required>
+
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"
                         pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required></label>
-                <label class="top"> Phone<input type="tel" name="Phone" placeholder="1235551234"></label>
+
+                <label class="top">Phone<input type="tel" name="Phone" placeholder="1235551234"></label>
+
                 <label for="r">Page Rating</label>
                 <div id="rangevalue">0</div>
                 <input class="top" type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
@@ -53,13 +62,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </datalist>
-                
-                </fieldset>
+            </fieldset>
 
             <input type="submit" value="Send My Rating" class="submitBtn">
-            </form>
+        </form>
     </main>
-<script src="scripts/scripts.js"></script>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
