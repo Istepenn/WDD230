@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join the Chamber</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form-base.css">
+    <link rel="stylesheet" href="styles/form-larger.css">
+    <style>
+        /* Additional styles specific to this page */
+        /* Adjust as per your existing CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add any specific styling here */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Join the Chamber</h1>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Membership</a></li>
+            <li class="active"><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Membership Application Form</h2>
+        <form action="thankyou.html" method="get">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="title">Title/Position:</label>
+            <input type="text" id="title" name="title" pattern="[A-Za-z -]{7,}" title="Must contain at least 7 characters of letters, hyphens, and spaces only." required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="business">Business/Organization Name:</label>
+            <input type="text" id="business" name="business" required><br><br>
+
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership" required>
+                <option value="">Select Membership Level</option>
+                <option value="NP">NP Membership (No Fee)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select><br><br>
+
+            <label for="description">Business Description:</label><br>
+            <textarea id="description" name="description"></textarea><br><br>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <section>
+            <h2>Membership Benefits</h2>
+            <p>Include membership benefits information here.</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Stephen Kyle Suiton; 09518901891
+    </footer>
+
+    <script>
+        // JavaScript to set the current timestamp
+        document.getElementById('timestamp').value = new Date().toLocaleString();
+    </script>
+</body>
+
+</html>
